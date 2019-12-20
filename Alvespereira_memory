@@ -1,0 +1,322 @@
+//drawinghead
+    var Dhead = function(dBitmoji){
+//headphones
+fill(43, 44, 46);
+ellipse (dBitmoji.x+(161*dBitmoji.h/100),dBitmoji.y+171*dBitmoji.h/100,27*dBitmoji.h/100,49*dBitmoji.h/100);
+ellipse (dBitmoji.x+265*dBitmoji.h/100,dBitmoji.y+170*dBitmoji.h/100,27*dBitmoji.h/100,49*dBitmoji.h/100);
+//head
+fill(237, 233, 218);
+ellipse (dBitmoji.x+213*dBitmoji.h/100,dBitmoji.y+180*dBitmoji.h/100,99*dBitmoji.h/100,125*dBitmoji.h/100);
+//nose
+triangle(dBitmoji.x+215*dBitmoji.h/100, dBitmoji.y+191*dBitmoji.h/100, dBitmoji.x+223*dBitmoji.h/100, dBitmoji.y+216*dBitmoji.h/100, dBitmoji.x+206*dBitmoji.h/100, dBitmoji.y+216*dBitmoji.h/100);
+//eyes
+fill(255, 255, 255);
+
+ellipse (dBitmoji.x+235*dBitmoji.h/100,dBitmoji.y+184*dBitmoji.h/100,30*dBitmoji.h/100,30*dBitmoji.h/100);
+
+ellipse (dBitmoji.x+194*dBitmoji.h/100,dBitmoji.y+184*dBitmoji.h/100,30*dBitmoji.h/100,30*dBitmoji.h/100);
+//iris
+fill(92, 57, 57);
+
+ellipse (dBitmoji.x+236*dBitmoji.h/100,dBitmoji.y+184*dBitmoji.h/100,20*dBitmoji.h/100,21*dBitmoji.h/100);
+
+ellipse (dBitmoji.x+194*dBitmoji.h/100,dBitmoji.y+184*dBitmoji.h/100,20*dBitmoji.h/100,21*dBitmoji.h/100);
+
+//pupils
+fill(0, 0, 0);
+ellipse (dBitmoji.x+194*dBitmoji.h/100,dBitmoji.y+184*dBitmoji.h/100,9*dBitmoji.h/100,9*dBitmoji.h/100);
+ellipse (dBitmoji.x+236*dBitmoji.h/100,dBitmoji.y+184*dBitmoji.h/100,9*dBitmoji.h/100,9*dBitmoji.h/100);
+//hair
+arc(dBitmoji.x+214*dBitmoji.h/100, dBitmoji.y+155*dBitmoji.h/100, 124*dBitmoji.h/100, 99*dBitmoji.h/100, 180, 360);
+//eyebrows
+rect(dBitmoji.x+179*dBitmoji.h/100,dBitmoji.y+159*dBitmoji.h/100, 27*dBitmoji.h/100, 9*dBitmoji.h/100, 16*dBitmoji.h/100);
+rect(dBitmoji.x+223*dBitmoji.h/100,dBitmoji.y+159*dBitmoji.h/100, 27*dBitmoji.h/100, 9*dBitmoji.h/100, 16*dBitmoji.h/100);
+//mouth
+ellipse(dBitmoji.x+214*dBitmoji.h/100, dBitmoji.y+225*dBitmoji.h/100, 30*dBitmoji.h/100, 3*dBitmoji.h/100);};
+//drawingbody
+    var Dbody = function(dBitmoji){
+//shirt
+fill( dBitmoji.shirtColor);
+quad(dBitmoji.x+172*dBitmoji.h/100, dBitmoji.y+242*dBitmoji.h/100, dBitmoji.x+249*dBitmoji.h/100, dBitmoji.y+242*dBitmoji.h/100, dBitmoji.x+274*dBitmoji.h/100, dBitmoji.y+283*dBitmoji.h/100, dBitmoji.x+145*dBitmoji.h/100, dBitmoji.y+281*dBitmoji.h/100);
+//initials
+        if(dBitmoji.initials===false){
+    }
+    else{fill(255, 255, 255);
+ beginShape(QUAD_STRIP);
+vertex(dBitmoji.x+195*dBitmoji.h/100, dBitmoji.y+252*dBitmoji.h/100); 
+vertex(dBitmoji.x+194*dBitmoji.h/100, dBitmoji.y+265*dBitmoji.h/100); 
+vertex(dBitmoji.x+178*dBitmoji.h/100, dBitmoji.y+251*dBitmoji.h/100);
+vertex(dBitmoji.x+174*dBitmoji.h/100, dBitmoji.y+265*dBitmoji.h/100);
+
+endShape();
+
+beginShape(QUAD_STRIP);
+vertex(dBitmoji.x+178*dBitmoji.h/100,dBitmoji.y+ 251*dBitmoji.h/100); 
+vertex(dBitmoji.x+178*dBitmoji.h/100,dBitmoji.y+ 282*dBitmoji.h/100); 
+vertex(dBitmoji.x+166*dBitmoji.h/100,dBitmoji.y+ 251*dBitmoji.h/100);
+vertex(dBitmoji.x+164*dBitmoji.h/100,dBitmoji.y+ 281*dBitmoji.h/100);
+
+endShape();
+ beginShape(QUAD_STRIP);
+vertex(dBitmoji.x+194*dBitmoji.h/100,dBitmoji.y+ 269*dBitmoji.h/100); 
+vertex(dBitmoji.x+190*dBitmoji.h/100,dBitmoji.y+ 279*dBitmoji.h/100); 
+vertex(dBitmoji.x+177*dBitmoji.h/100,dBitmoji.y+ 268*dBitmoji.h/100);
+vertex(dBitmoji.x+174*dBitmoji.h/100,dBitmoji.y+ 278*dBitmoji.h/100);
+
+endShape();
+
+ beginShape(QUAD_STRIP);
+vertex(dBitmoji.x+202*dBitmoji.h/100,dBitmoji.y+ 256*dBitmoji.h/100); 
+vertex(dBitmoji.x+252*dBitmoji.h/100,dBitmoji.y+ 282*dBitmoji.h/100); 
+vertex(dBitmoji.x+237*dBitmoji.h/100,dBitmoji.y+ 252*dBitmoji.h/100);
+vertex(dBitmoji.x+202*dBitmoji.h/100,dBitmoji.y+ 278*dBitmoji.h/100);
+
+endShape();}
+};
+    var dBitmoji = function (bitmojiObject) { 
+Dbody(bitmojiObject) ;
+Dhead(bitmojiObject) ;
+};
+
+
+
+
+// Global config
+var NUM_COLS = 6;
+var NUM_ROWS = 4;
+var Scene = 0;
+var Time = 0;
+var rTime =0;
+//kahn button
+var Button = function(config) {
+    this.x = config.x || 0;
+    this.y = config.y || 0;
+    this.width = config.width || 150;
+    this.height = config.height || 50;
+    this.label = config.label || "Click";
+    this.onClick = config.onClick || function() {};
+};
+Button.prototype.isMouseInside = function() {
+    return mouseX > this.x &&
+           mouseX < (this.x + this.width) &&
+           mouseY > this.y &&
+           mouseY < (this.y + this.height);
+};
+var Tile = function(x, y, face) {
+    this.x = x;
+    this.y = y;
+    this.face = face; 
+    this.width = 56;
+    this.color = color(25, 92, 41);
+};
+
+Tile.prototype.drawFaceDown = function() {
+
+    fill(this.color);
+    strokeWeight(2);
+    rect(this.x, this.y, this.width, this.width, 10);
+    image(getImage("avatars/leaf-green"), this.x, this.y, this.width, this.width);
+    this.isFaceUp = false;
+    
+   
+    
+};
+
+Tile.prototype.drawFaceUp = function() {
+    fill(214, 247, 202);
+    strokeWeight(2);
+    rect(this.x, this.y, this.width, this.width, 10);
+    image(this.face, this.x, this.y, this.width, this.width);
+    this.isFaceUp = true;
+};
+
+Tile.prototype.isUnderMouse = function(x, y) {
+    return x >= this.x && x <= this.x + this.width  &&
+        y >= this.y && y <= this.y + this.width;
+};
+
+
+// Declare an array of all possible faces
+var faces = [
+    getImage("avatars/avatar-team"),
+    getImage("avatars/aqualine-ultimate"),
+    getImage("avatars/duskpin-tree"),
+    getImage("avatars/duskpin-ultimate"),
+    getImage("avatars/orange-juice-squid"),
+    getImage("avatars/piceratops-ultimate"),
+    getImage("avatars/primosaur-tree"),
+    getImage("avatars/primosaur-ultimate"),
+    getImage("avatars/starky-ultimate"),
+    getImage("avatars/robot_female_3")
+];
+
+// Make an array which has 2 of each, then randomize it
+var possibleFaces = faces.slice(0);
+var selected = [];
+for (var i = 0; i < (NUM_COLS * NUM_ROWS) / 3; i++) {
+    // Randomly pick one from the array of remaining faces
+    var randomInd = floor(random(possibleFaces.length));
+    var face = possibleFaces[randomInd];
+    // Push thrice onto array
+    selected.push(face);
+    selected.push(face);
+    selected.push(face);
+    // Remove from array
+    possibleFaces.splice(randomInd, 1);
+}
+
+// Now we need to randomize the array
+selected.sort(function() {
+    return 0.5 - Math.random();
+});
+
+// Create the tiles
+var tiles = [];
+for (var i = 0; i < NUM_COLS; i++) {
+    for (var j = 0; j < NUM_ROWS; j++) {
+        tiles.push(new Tile(i * 58 + 9, j * 63 + 28, selected.pop()));
+    }
+}
+
+background(255, 255, 255);
+
+// Now draw them face up
+
+var flippedTiles = [];
+var delayStartFC = null;
+var numTries = 0;
+
+var startButton = new Button({
+    x: 117,
+    y: 270,
+    label: "Start",
+    onClick: function() {
+        Scene = 1;
+        background(255, 255, 255);
+        for (var i = 0; i < tiles.length; i++) {
+            tiles[i].drawFaceDown();
+        }
+        Time=millis();
+    }
+});
+
+//start screen
+var startScreen = function() {
+    background(210, 212, 219);
+    if (Scene === 0) {
+        textAlign(CENTER,CENTER);
+        textSize(30);
+        text("Memory Game!",197,43);
+        startButton.draw();
+        dBitmoji (
+     {x:-59,
+            y:-67,
+            h:120,
+            shirtColor:color(255, 115, 0),
+            initials:true}
+            );
+    }
+};
+
+Button.prototype.draw = function() {
+    fill(0, 234, 255);
+    rect(this.x, this.y, this.width, this.height, 5);
+    fill(0, 0, 0);
+    textSize(19);
+    textAlign(LEFT, TOP);
+    text(this.label, this.x+10, this.y+this.height/4);
+};
+Button.prototype.isMouseInside = function() {
+    return mouseX > this.x &&
+           mouseX < (this.x + this.width) &&
+           mouseY > this.y &&
+           mouseY < (this.y + this.height);
+};
+Button.prototype.handleMouseClick = function() {
+    if (this.isMouseInside()) {
+        this.onClick();
+    }
+};
+mouseMoved = function() {
+    if(Scene===1){
+    for (var x = 0; x < tiles.length; x++) {
+        if (tiles[x].isUnderMouse(mouseX, mouseY)&&!tiles[x].isFaceUp) {
+            tiles[x].color = color(238, 255, 0);
+            tiles[x].drawFaceDown();
+            
+        }
+    
+    }
+    }
+};
+mouseClicked = function() {
+    if (Scene ===0) {  
+        startButton.handleMouseClick();
+    }
+    for (var i = 0; i < tiles.length; i++) {
+        if (tiles[i].isUnderMouse(mouseX, mouseY)) {
+            if (flippedTiles.length < 3 && !tiles[i].isFaceUp) {
+                tiles[i].drawFaceUp();
+                flippedTiles.push(tiles[i]);
+                if (flippedTiles.length === 3) {
+                    numTries++;
+                   if (flippedTiles[0].face === flippedTiles[1].face && flippedTiles[1].face === flippedTiles[2].face) {
+                        flippedTiles[0].isMatch = true;
+                        flippedTiles[1].isMatch = true;
+                        flippedTiles[2].isMatch = true;
+                    }
+                    delayStartFC = frameCount;
+                    loop();
+                }
+            } 
+        }
+    
+    }
+    var foundAllMatches = true;
+    for (var i = 0; i < tiles.length; i++) {
+        foundAllMatches = foundAllMatches && tiles[i].isMatch;
+    }
+    if (foundAllMatches) {
+        fill(0, 0, 0);
+        textSize(20);
+        text("You found them all in " + numTries + " tries!", 20, 375);
+    }
+};
+
+
+
+
+
+draw = function() {
+    
+    if (Scene === 1){
+        rTime=millis()-Time;
+        //background(255, 255, 255);
+        if (tiles[i].isUnderMouse(mouseX, mouseY) && !tiles[i].isFaceUp) {
+                tiles[i].drawFaceDown();
+            }
+            if (tiles[i].hover) {
+                if (!tiles[i].isUnderMouse(mouseX, mouseY) && !tiles[i].isFaceUp) {
+                    tiles[i].drawFaceDown();
+                }
+            }
+        if (delayStartFC && (frameCount - delayStartFC) > 30) {
+            for (var i = 0; i < tiles.length; i++) {
+                if (!tiles[i].isMatch) {
+                    tiles[i].drawFaceDown();
+                }
+            }
+            flippedTiles = [];
+            delayStartFC = null;
+            noLoop();
+        }
+        fill(140, 0, 255);
+        rect(100,284,124,21);
+        fill(255, 255, 255);
+        text(round(rTime/1000),102,282);
+   }
+   else if (Scene === 0){
+        startScreen();
+        text("Match 3 and complete the maximum amount \nof matches as  fast as possible",11,344);
+   }
+};
